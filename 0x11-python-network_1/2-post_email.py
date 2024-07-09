@@ -11,4 +11,4 @@ if __name__ == "__main__":
 
     request = urllib.request.Request(url, data=data, method='POST')
     with urllib.request.urlopen(request) as response:
-        print(response.read().decode("utf-8"))
+        print(response.read().decode("utf-8\n"))
